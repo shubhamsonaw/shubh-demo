@@ -1,0 +1,6 @@
+services:
+  website:
+    build: .
+    container_name: my-website
+    ports:
+      - "8080:80"
