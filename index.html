@@ -1,18 +1,371 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First Web Page</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>DevSpace | Modern Website</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Hello World!</h1>
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
 
-    <p>This is my first HTML webpage.</p>
+        <div class="container nav-container">
 
-    <button>Click Me</button>
+            <a href="#" class="logo">Dev<span>Space</span></a>
+
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-buttons">
+                <button id="themeBtn" class="icon-btn">🌙</button>
+                <button id="menuBtn" class="menu-btn">☰</button>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="badge">🚀 Welcome to DevSpace</p>
+
+                    <h1>
+                        Build Something
+                        <span>Amazing.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        A simple modern website built with HTML, CSS,
+                        and JavaScript. Fast, responsive and interactive.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#features" class="btn primary-btn">
+                            Explore Features
+                        </a>
+
+                        <a href="#contact" class="btn secondary-btn">
+                            Contact Us
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="code-header">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="code-content">
+                        <p><span class="purple">const</span> website = {</p>
+                        <p class="indent">
+                            name:
+                            <span class="green">'DevSpace'</span>,
+                        </p>
+                        <p class="indent">
+                            technology:
+                            <span class="green">'HTML/CSS/JS'</span>,
+                        </p>
+                        <p class="indent">
+                            status:
+                            <span class="green">'Running'</span>
+                        </p>
+                        <p>};</p>
+
+                        <p class="success">
+                            ✓ Website running successfully
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+        <section class="stats">
+
+            <div class="container stats-grid">
+
+                <div class="stat">
+                    <h2 class="counter" data-target="100">0</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat">
+                    <h2 class="counter" data-target="50">0</h2>
+                    <p>Clients</p>
+                </div>
+
+                <div class="stat">
+                    <h2 class="counter" data-target="99">0</h2>
+                    <p>Success %</p>
+                </div>
+
+                <div class="stat">
+                    <h2 class="counter" data-target="24">0</h2>
+                    <p>Support</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+        <section id="features" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">FEATURES</p>
+
+                    <h2>Everything You Need</h2>
+
+                    <p>
+                        This website demonstrates some common
+                        features you can build with JavaScript.
+                    </p>
+
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">⚡</div>
+
+                        <h3>Fast</h3>
+
+                        <p>
+                            Lightweight code with fast loading
+                            and smooth interactions.
+                        </p>
+
+                        <button class="learn-btn"
+                                data-feature="Fast">
+                            Learn More →
+                        </button>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">📱</div>
+
+                        <h3>Responsive</h3>
+
+                        <p>
+                            Works smoothly on desktops,
+                            tablets and mobile devices.
+                        </p>
+
+                        <button class="learn-btn"
+                                data-feature="Responsive">
+                            Learn More →
+                        </button>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🔒</div>
+
+                        <h3>Secure</h3>
+
+                        <p>
+                            Follow good development practices
+                            for safer web applications.
+                        </p>
+
+                        <button class="learn-btn"
+                                data-feature="Secure">
+                            Learn More →
+                        </button>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">🎨</div>
+
+                        <h3>Modern UI</h3>
+
+                        <p>
+                            Clean design with animations and
+                            interactive components.
+                        </p>
+
+                        <button class="learn-btn"
+                                data-feature="Modern UI">
+                            Learn More →
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+        <section id="about" class="section about-section">
+
+            <div class="container about-content">
+
+                <div>
+
+                    <p class="section-label">ABOUT US</p>
+
+                    <h2>Simple Technology.<br>Powerful Results.</h2>
+
+                </div>
+
+                <div>
+
+                    <p>
+                        DevSpace is a demonstration website showing
+                        how HTML, CSS and JavaScript work together.
+                    </p>
+
+                    <p>
+                        HTML creates the structure, CSS creates the
+                        design, and JavaScript makes the website
+                        interactive and dynamic.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+        <section id="contact" class="section">
+
+            <div class="container contact-container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">CONTACT</p>
+
+                    <h2>Let's Work Together</h2>
+
+                    <p>
+                        Send us a message and we will get back to you.
+                    </p>
+
+                </div>
+
+
+                <form id="contactForm" class="contact-form">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="name">Name</label>
+
+                            <input
+                                type="text"
+                                id="name"
+                                placeholder="Your name"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="email">Email</label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="you@example.com"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Write your message..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="btn primary-btn">
+                        Send Message
+                    </button>
+
+                    <p id="formMessage"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <p>
+                © <span id="year"></span> DevSpace.
+                All rights reserved.
+            </p>
+
+            <p>Built with HTML • CSS • JavaScript</p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>
